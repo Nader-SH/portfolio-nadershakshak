@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const Navbar = () => {
@@ -5,7 +6,7 @@ const Navbar = () => {
     <div>
       <nav>
         <div className="logo">
-          <h1>Protfolio Nader Shakshak</h1>
+          <Image src="/nadershakshak.jpg" alt="nader shakshak" height={128} width={128} />
         </div>
         <Link href="/">Home</Link>
         <Link href="/about">About</Link>

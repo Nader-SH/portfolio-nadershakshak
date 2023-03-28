@@ -7,9 +7,24 @@ const Footer = () => {
         <h1> Contacts : </h1>
       </div>
       <div className="socialMedia">
-        <Link href="#">Instgram</Link>
-        <Link href="#">Email</Link>
-        <Link href="#">Linkedin</Link>
+        <Link href="https://github.com/Nader-SH" target="_blank">
+          Github
+        </Link>
+        <Link
+          href="https://docs.google.com/document/d/192cIo6BxVKOA3t5uXmv6gXrrIF_bQznD/edit?usp=sharing&ouid=101299738558864106025&rtpof=true&sd=true"
+          target="_blank"
+        >
+          CV
+        </Link>
+        <Link
+          href="https://www.linkedin.com/in/nader-shakshak-4b9965247/"
+          target="_blank"
+        >
+          My LinkedIn
+        </Link>
+        <Link href="mailto:nadershak149@gmail.com" target="_blank">
+          Send Email
+        </Link>
       </div>
     </footer>
   );

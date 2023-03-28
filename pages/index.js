@@ -1,9 +1,14 @@
+import Head from "next/head";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
 export default function Home() {
   return (
+    <>
+    <Head>
+    <title>Nader | Homepage</title>
+    </Head>
     <div>
-      <h1 className={styles.title}>home page</h1>
+      <h1 className={styles.title}>Homepage</h1>
       <p className={styles.text}>
         It is a long established fact that a reader will be distracted by the
         readable content of a page when looking at its layout. The point of
@@ -19,5 +24,6 @@ export default function Home() {
         See Nader List
       </Link>
     </div>
+    </>
   );
 }

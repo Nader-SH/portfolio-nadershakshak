@@ -10,7 +10,7 @@ a {
   text-decoration: none;
 }
 .content {
-  max-width: 960px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 nav {
@@ -27,6 +27,9 @@ nav a {
 nav .logo {
   margin-right: auto;
 }
+.logo img {
+  border-radius: 50%;
+}
 footer {
   display: block;
   text-align: center;
@@ -38,4 +41,11 @@ footer {
 .socialMedia{
   display: flex;
   justify-content: space-around;
+}
+.not-found {
+  text-align: center;
+}
+.not-found a{
+  color: #4979ff;
+  text-decoration: underline;
 }

@@ -6,11 +6,11 @@ const Navbar = () => {
     <div>
       <nav>
         <div className="logo">
-          <Image src="/nadershakshak.jpg" alt="nader shakshak" height={128} width={128} />
+          <Image src="/nadershakshak.jpg" alt="nader shakshak" height={115} width={115} />
         </div>
         <Link href="/">Home</Link>
         <Link href="/about">About</Link>
-        <Link href="/nader">Nader List</Link>
+        <Link href="/nader">Nader List Repositories</Link>
       </nav>
     </div>
   );

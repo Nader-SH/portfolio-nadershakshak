@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { AiFillGithub } from "react-icons/ai";
 
-console.log();
 
 const token = process.env.NEXT_PUBLIC_GIT_HUB_TOKEN;
 getGitHubProfile(token);

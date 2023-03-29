@@ -5,7 +5,7 @@ import Link from "next/link";
 import { AiFillGithub } from "react-icons/ai";
 
 const token =
-  "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";
+  "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";
 getGitHubProfile(token);
 async function getGitHubProfile(token) {
   const response = await fetch(`https://api.github.com/users/Nader-SH`, {

@@ -4,8 +4,9 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { AiFillGithub } from "react-icons/ai";
 
-const token =
-  "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";
+console.log();
+
+const token = process.env.NEXT_PUBLIC_GIT_HUB_TOKEN;
 getGitHubProfile(token);
 async function getGitHubProfile(token) {
   const response = await fetch(`https://api.github.com/users/Nader-SH`, {
@@ -69,9 +70,11 @@ const List = () => {
                 target="_blank"
                 className={styles.iconCss}
               >
-                <AiFillGithub style={{
-                  fontSize:'40px'
-                }} />
+                <AiFillGithub
+                  style={{
+                    fontSize: "40px",
+                  }}
+                />
               </Link>
             </div>
           );

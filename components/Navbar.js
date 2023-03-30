@@ -9,7 +9,7 @@ const Navbar = () => {
           <Image src="/nadershakshak.jpg" alt="nader shakshak" height={115} width={115} />
         </div>
         <Link href="/">Home</Link>
-        <Link href="/about">About</Link>
+        <Link href="/about">About Me</Link>
         <Link href="/skills">My Skills</Link>
         <Link href="/nader">Nader List Repositories</Link>
       </nav>

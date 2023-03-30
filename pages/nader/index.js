@@ -4,8 +4,6 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { AiFillGithub } from "react-icons/ai";
 
-console.log();
-
 const token = process.env.NEXT_PUBLIC_GIT_HUB_TOKEN;
 getGitHubProfile(token);
 async function getGitHubProfile(token) {
@@ -18,13 +16,11 @@ async function getGitHubProfile(token) {
     throw new Error(`HTTP error! status: ${response.status}`);
   }
   const data = await response.json();
-  console.log(data);
   return data;
 }
 
 const List = () => {
   const [repos, setRepos] = useState([]);
-  console.log(repos);
   useEffect(() => {
     getAllRepos(token);
   }, []);
@@ -47,7 +43,6 @@ const List = () => {
         myArray.push(data[i]);
       }
     }
-    console.log(myArray);
     myArray.reverse();
     setRepos(myArray);
   }

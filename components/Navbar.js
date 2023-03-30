@@ -10,6 +10,7 @@ const Navbar = () => {
         </div>
         <Link href="/">Home</Link>
         <Link href="/about">About</Link>
+        <Link href="/skills">My Skills</Link>
         <Link href="/nader">Nader List Repositories</Link>
       </nav>
     </div>

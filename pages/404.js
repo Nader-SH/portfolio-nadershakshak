@@ -8,7 +8,7 @@ const NotFound = () => {
       router.push("/");
     }, 5000);
   }, []);
-  
+
   return (
     <div className="not-found">
       <h1>Ooops...</h1>

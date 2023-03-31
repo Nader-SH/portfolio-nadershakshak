@@ -14,8 +14,8 @@ export default function Home() {
           website is a space for me to share my thoughts, experiences, and ideas
           with the world.
         </p>
-        <Link href="/nader" className={styles.btn}>
-          See Nader List
+        <Link href="/about" className={styles.btn}>
+          See About Nader 
         </Link>
       </div>
     </>

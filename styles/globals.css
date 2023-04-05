@@ -43,6 +43,9 @@ nav .logo {
   .tabsList{
     justify-content: center;
   }
+  nav{
+    margin: 10px;
+  }
 }
 
 .logo img {

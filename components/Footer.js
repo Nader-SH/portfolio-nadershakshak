@@ -11,7 +11,7 @@ const Footer = () => {
           Github
         </Link>
         <Link
-          href="https://docs.google.com/document/d/192cIo6BxVKOA3t5uXmv6gXrrIF_bQznD/edit?usp=sharing&ouid=101299738558864106025&rtpof=true&sd=true"
+          href="https://docs.google.com/document/d/1RkBVkhYrIscVzMxFSIHxeXKjaXmnZZVm/edit?usp=sharing&ouid=101299738558864106025&rtpof=true&sd=true"
           target="_blank"
         >
           CV

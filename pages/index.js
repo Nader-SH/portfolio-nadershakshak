@@ -10,12 +10,16 @@ export default function Home() {
       <div>
         <h1 className={styles.title}>Welcome to my personal website!</h1>
         <p className={styles.text}>
-          My name is Nader Shakshak and I`m thrilled to have you here. This
-          website is a space for me to share my thoughts, experiences, and ideas
-          with the world.
+          Welcome to my website, where you can get to know me, Nader Shakshak,
+          and explore important topics that I am passionate about. Here, I aim
+          to provide you with valuable insights and perspectives on a wide range
+          of subjects, including business, technology, personal growth, and
+          more. Through my blog posts, articles, and videos, I hope to inspire
+          and empower you to become the best version of yourself, both
+          professionally and personally.
         </p>
         <Link href="/about" className={styles.btn}>
-          See About Nader 
+          See About Nader
         </Link>
       </div>
     </>

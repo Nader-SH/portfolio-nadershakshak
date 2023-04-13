@@ -1,4 +1,5 @@
 import styles from "../styles/Nader.module.css";
+import styleshome from "../styles/Home.module.css";
 import Head from "next/head";
 import Link from "next/link";
 import { FaGit, FaNode } from "react-icons/fa";
@@ -209,6 +210,9 @@ const List = () => {
           </Link>
         </div>
       </div>
+      <Link href="/nader" className={styleshome.btn}>
+        Nader Projects
+      </Link>
     </>
   );
 };

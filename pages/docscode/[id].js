@@ -3,31 +3,31 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import styles from "../../styles/Home.module.css";
 
-const Details = () => {
-  const [theData, setTheData] = useState([]);
-  const router = useRouter();
-  const { asPath } = router;
-  const endpointId = router.asPath.split("/").pop();
-  const filteredData = detailsDataId.filter(
-    (item) => item.id === parseInt(endpointId)
-  );
+export async function getServerSideProps(context) {
+  const { id } = context.query;
+  return { props: { id } };
+}
 
+const Details = ({ id }) => {
+  const [theData, setTheData] = useState([]);
+  console.log(theData);
   useEffect(() => {
-    setTheData(filteredData);
+    detailsDataId.filter((ele) => {
+      if (ele.id === Number(id)) {
+        console.log(ele);
+        setTheData(ele);
+      }
+    });
   }, []);
   return (
     <div>
-      {theData.map((ele) => (
-        <>
-          <Head>
-            <title>Nader | {ele.title}</title>
-          </Head>
-          <div>
-            <h1 className={styles.title}>{ele.title}</h1>
-            <p className={styles.text}>{ele.disc}</p>
-          </div>
-        </>
-      ))}
+      <Head>
+        <title>Naderss | {theData.title}</title>
+      </Head>
+      <div>
+        <h1 className={styles.title}>{theData.title}</h1>
+        <p className={styles.text}>{theData.disc}</p>
+      </div>
     </div>
   );
 };
@@ -52,11 +52,6 @@ const detailsDataId = [
   },
   {
     id: 4,
-    title: "NodeJS",
-    disc: "Node.js is an open-source, cross-platform JavaScript runtime environment that allows developers to run JavaScript on the server-side. It is built on the V8 JavaScript engine, which is the same engine that powers Google Chrome, and it is designed to be fast, scalable, and lightweight.",
-  },
-  {
-    id: 5,
     title: "ExpressJS",
     disc: "Express.js is a popular open-source web application framework for Node.js. It provides a robust set of features for building web and mobile applications.",
   },

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -37,6 +38,9 @@ const About = () => {
           developer with a passion for learning and utilizing new technologies.
         </p>
       </div>
+      <Link href="/skills" className={styles.btn}>
+        Nader Skills
+      </Link>
     </>
   );
 };

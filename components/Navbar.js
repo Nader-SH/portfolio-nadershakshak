@@ -12,7 +12,7 @@ const Navbar = () => {
         <Link href="/">Home</Link>
         <Link href="/about">About Me</Link>
         <Link href="/skills">My Skills</Link>
-        <Link href="/nader">Nader List Repositories</Link>
+        <Link href="/nader">Projects</Link>
         <Link href="/docscode">Best of Docs</Link>
         </div>
       </nav>

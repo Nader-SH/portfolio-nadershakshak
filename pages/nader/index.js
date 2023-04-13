@@ -3,50 +3,12 @@ import Head from "next/head";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { AiFillGithub } from "react-icons/ai";
+import { GrRedo } from "react-icons/gr";
+import stylesHome from "../../styles/Home.module.css";
 
 const token = process.env.NEXT_PUBLIC_GIT_HUB_TOKEN;
-getGitHubProfile(token);
-async function getGitHubProfile(token) {
-  const response = await fetch(`https://api.github.com/users/Nader-SH`, {
-    headers: {
-      Authorization: `token ${token}`,
-    },
-  });
-  if (!response.ok) {
-    throw new Error(`HTTP error! status: ${response.status}`);
-  }
-  const data = await response.json();
-  return data;
-}
 
 const List = () => {
-  const [repos, setRepos] = useState([]);
-  useEffect(() => {
-    getAllRepos(token);
-  }, []);
-  async function getAllRepos(token) {
-    const response = await fetch(
-      `https://api.github.com/users/Nader-SH/repos?type=all&per_page=1000`,
-      {
-        headers: {
-          Authorization: `token ${token}`,
-        },
-      }
-    );
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    let myArray = [];
-    const data = await response.json();
-    for (let i = 0; i < data.length; i++) {
-      if (data[i].owner.login === "Nader-SH") {
-        myArray.push(data[i]);
-      }
-    }
-    myArray.reverse();
-    setRepos(myArray);
-  }
-
   return (
     <>
       <Head>
@@ -56,27 +18,64 @@ const List = () => {
         <h1>Nader List Repositories </h1>
       </div>
       <div>
-        {repos.map((repo) => {
-          return (
-            <div className={styles.single} key={repo.id}>
-              <h3> {repo.name}</h3>
-              <Link
-                href={`https://github.com/Nader-SH/${repo.name}`}
-                target="_blank"
-                className={styles.iconCss}
-              >
-                <AiFillGithub
-                  style={{
-                    fontSize: "40px",
-                  }}
-                />
-              </Link>
-            </div>
-          );
-        })}
+        {repos.map((ele) => (
+          <div key={ele.id} className={styles.single}>
+            <h3>{ele.title}</h3>
+            <Link
+              href={`/nader/${ele.id}`}
+              target="_self"
+              className={styles.iconCss}
+            >
+              <h4>Details</h4>
+            </Link>
+            <Link href={ele.link} target="_blank" className={styles.iconCss}>
+              <GrRedo
+                style={{
+                  fontSize: "30px",
+                }}
+              />
+            </Link>
+          </div>
+        ))}
+        <Link href="/docscode" className={stylesHome.btn}>
+          Nader Docs
+        </Link>
       </div>
     </>
   );
 };
 
 export default List;
+
+const repos = [
+  {
+    id: 1,
+    title: "Vivo",
+    disc: "A site that combines social networking sites, an online store, and a lot of things that I wanted to learn",
+    link: "https://github.com/Nader-SH/Vivo",
+  },
+  {
+    id: 2,
+    title: "PMS",
+    disc: "The creation of a full pharmacy management system in the Gaza Strip will be a part of the digital transition with what is happening around us, as we are aware of and watch the world becoming entirely digital.",
+    link: "https://github.com/Nader-SH/PMS",
+  },
+  {
+    id: 3,
+    title: "Shop_t7",
+    disc: "A simple eCommerce app using ReactJs.",
+    link: "https://github.com/Nader-SH/Shop_t7",
+  },
+  {
+    id: 4,
+    title: "Portfolio",
+    disc: "my website",
+    link: "https://github.com/Nader-SH/portfolio-nadershakshak",
+  },
+  {
+    id: 5,
+    title: "Team3-bookStore",
+    disc: "Website to buy and borrow books",
+    link: "https://github.com/Nader-SH/Team3-bookStore",
+  },
+];

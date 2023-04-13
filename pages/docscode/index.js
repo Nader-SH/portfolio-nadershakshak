@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { GrRedo } from "react-icons/gr";
 import styles from "../../styles/Nader.module.css";
-
+import stylesHome from "../../styles/Home.module.css";
 const dataDocsCode = [
   {
     id: 1,
@@ -21,11 +21,6 @@ const dataDocsCode = [
   },
   {
     id: 4,
-    title: "NodeJS",
-    link: "https://nodejs.org/en/docs",
-  },
-  {
-    id: 5,
     title: "ExpressJS",
     link: "https://expressjs.com/en/starter/installing.html",
   },
@@ -59,6 +54,9 @@ const DocsCode = () => {
           </div>
         ))}
       </div>
+      <Link href="/" className={stylesHome.btn}>
+          Home
+        </Link>
     </>
   );
 };

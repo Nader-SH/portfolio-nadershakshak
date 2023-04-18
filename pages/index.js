@@ -19,7 +19,7 @@ export default function Home() {
           professionally and personally.
         </p>
         <Link href="/about" className={styles.btn}>
-          See About Nader
+          About Nader
         </Link>
       </div>
     </>

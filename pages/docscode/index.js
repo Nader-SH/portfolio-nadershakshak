@@ -10,6 +10,11 @@ const dataDocsCode = [
     link: "https://roadmap.sh/",
   },
   {
+    id:5,
+    title:"43 Interview Questions for Developers",
+    link:"https://www.indeed.com/career-advice/interviewing/interview-questions-for-developers"
+  },
+  {
     id: 2,
     title: "ReactJS",
     link: "https://legacy.reactjs.org/docs/getting-started.html",
@@ -24,6 +29,7 @@ const dataDocsCode = [
     title: "ExpressJS",
     link: "https://expressjs.com/en/starter/installing.html",
   },
+
 ];
 
 const DocsCode = () => {
@@ -34,29 +40,36 @@ const DocsCode = () => {
       </Head>
       <div>
         <h1 className={styles.title}>Software Documentation</h1>
-        {dataDocsCode.map((ele) => (
-          <div key={ele.id} className={styles.single}>
-            <h3>{ele.title}</h3>
-            <Link
-              href={`/docscode/${ele.id}`}
-              target="_self"
-              className={styles.iconCss}
-            >
-              <h4>Details</h4>
-            </Link>
-            <Link href={ele.link} target="_blank" className={styles.iconCss}>
-              <GrRedo
-                style={{
-                  fontSize: "30px",
-                }}
-              />
-            </Link>
-          </div>
-        ))}
+        <div className={stylesHome.allDivs}>
+          {dataDocsCode.map((ele) => (
+            <>
+              <div key={ele.id} className={styles.single}>
+                <Link href={`/docscode/${ele.id}`} target="_self" className={stylesHome.aTag}>
+                  <div className={stylesHome.titleDiv}>
+                    <h3>{ele.title}</h3>
+                  </div>
+                </Link>
+                <div className={styles.titleDiv}>
+                  <Link
+                    href={ele.link}
+                    target="_blank"
+                    className={styles.iconCss}
+                  >
+                    <GrRedo
+                      style={{
+                        fontSize: "30px",
+                      }}
+                    />
+                  </Link>
+                </div>
+              </div>
+            </>
+          ))}
+        </div>
       </div>
       <Link href="/" className={stylesHome.btn}>
-          Home
-        </Link>
+        Home
+      </Link>
     </>
   );
 };

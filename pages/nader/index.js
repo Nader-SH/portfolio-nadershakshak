@@ -6,7 +6,6 @@ import { AiFillGithub } from "react-icons/ai";
 import { GrRedo } from "react-icons/gr";
 import stylesHome from "../../styles/Home.module.css";
 
-const token = process.env.NEXT_PUBLIC_GIT_HUB_TOKEN;
 
 const List = () => {
   return (
@@ -20,13 +19,13 @@ const List = () => {
       <div>
         {repos.map((ele) => (
           <div key={ele.id} className={styles.single}>
-            <h3>{ele.title}</h3>
-            <Link
+                        <Link
               href={`/nader/${ele.id}`}
               target="_self"
               className={styles.iconCss}
             >
-              <h4>Details</h4>
+            <h3>{ele.title}</h3>
+
             </Link>
             <Link href={ele.link} target="_blank" className={styles.iconCss}>
               <GrRedo

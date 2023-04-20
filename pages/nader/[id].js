@@ -2,7 +2,8 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import styles from "../../styles/Home.module.css";
-
+import Link from "next/link";
+import stylesHome  from "../../styles/Home.module.css";
 const DetailsRepo = ({ id }) => {
   const [data, setData] = useState({});
 console.log(data);
@@ -13,7 +14,7 @@ console.log(data);
         setData(ele);
       }
     });
-  }, []);
+  }, [id]);
 
   return (
     <div>
@@ -24,7 +25,11 @@ console.log(data);
             <h1 className={styles.title}>{data.title}</h1>
             <p className={styles.text}>{data.disc}</p>
           </div>
+          <Link href="/nader" className={stylesHome.btn}>
+          Nader Projects
+        </Link>
     </div>
+    
   );
 };
 

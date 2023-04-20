@@ -19,7 +19,10 @@ const About = () => {
           effectively. In addition, I am familiar with Java and have a strong
           aptitude for learning new technologies. My professional experience
           includes working as a Software Engineer and Development Team in Gaza
-          Goes Global and Team Leader as a freelancer. In my role as a
+          Goes Global and Team Leader as a freelancer.
+          <br/>
+          <br/>
+           In my role as a
           Development Team Leader, I led the front-end development team and
           oversaw the successful delivery of various projects. I also gained
           valuable experience as a trainee on the front-end team at Gaza Goes
@@ -29,7 +32,10 @@ const About = () => {
           React, Material UI, Ant Design, GitHub, Git, and Typescript.
           Additionally, I possess essential technical skills such as database
           design and implementation, data migration, and version control using
-          Git. As a developer, I am skilled in testing and debugging, possess
+          Git.
+          <br/>
+          <br/>
+          As a developer, I am skilled in testing and debugging, possess
           strong problem-solving skills, and have the ability to collaborate
           effectively in a team and communicate technical concepts to both
           technical and non-technical stakeholders. I also have excellent time

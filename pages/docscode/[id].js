@@ -2,7 +2,8 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import styles from "../../styles/Home.module.css";
-
+import Link from "next/link";
+import stylesHome from "../../styles/Home.module.css";
 export async function getServerSideProps(context) {
   const { id } = context.query;
   return { props: { id } };
@@ -18,7 +19,7 @@ const Details = ({ id }) => {
         setTheData(ele);
       }
     });
-  }, []);
+  }, [id]);
   return (
     <div>
       <Head>
@@ -28,6 +29,9 @@ const Details = ({ id }) => {
         <h1 className={styles.title}>{theData.title}</h1>
         <p className={styles.text}>{theData.disc}</p>
       </div>
+      <Link href="/docscode" className={stylesHome.btn}>
+          Best Documents
+        </Link>
     </div>
   );
 };
@@ -39,6 +43,11 @@ const detailsDataId = [
     id: 1,
     title: "Developer Roadmaps",
     disc: "roadmap.sh is a community effort to create roadmaps, guides and other educational content to help guide the developers in picking up the path and guide their learnings.",
+  },
+  {
+    id:5,
+    title:"The beginning of your interview will probably focus on more basic questions. These questions provide the hiring manager with an overview of who you are and your general qualifications for the role you're interviewing for. Here are some general questions you can expect in an interview for a developer position.",
+    link:"https://www.indeed.com/career-advice/interviewing/interview-questions-for-developers"
   },
   {
     id: 2,
@@ -55,4 +64,5 @@ const detailsDataId = [
     title: "ExpressJS",
     disc: "Express.js is a popular open-source web application framework for Node.js. It provides a robust set of features for building web and mobile applications.",
   },
+
 ];

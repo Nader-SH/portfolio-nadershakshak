@@ -41,6 +41,12 @@ export default DetailsRepo;
 
 const repos = [
   {
+    id: 6,
+    title: "Eqra",
+    disc: "Collaborated with a team of developers to design and develop a user-friendly frontend for a school library management system. Developed the frontend using HTML, CSS, and JavaScript, ensuring that the design was responsive and optimized for all screen sizes.",
+    link: "",
+  },
+  {
     id: 1,
     title: "Vivo",
     disc: "A site that combines social networking sites, an online store, and a lot of things that I wanted to learn",

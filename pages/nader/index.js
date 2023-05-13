@@ -48,6 +48,12 @@ export default List;
 
 const repos = [
   {
+    id: 6,
+    title: "Eqra",
+    disc: "Freelance Project ",
+    link: "",
+  },
+  {
     id: 1,
     title: "Vivo",
     disc: "A site that combines social networking sites, an online store, and a lot of things that I wanted to learn",
@@ -77,4 +83,5 @@ const repos = [
     disc: "Website to buy and borrow books",
     link: "https://github.com/Nader-SH/Team3-bookStore",
   },
+
 ];

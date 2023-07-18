@@ -1,8 +1,6 @@
 import styles from "../../styles/Nader.module.css";
 import Head from "next/head";
-import { useEffect, useState } from "react";
 import Link from "next/link";
-import { AiFillGithub } from "react-icons/ai";
 import { GrRedo } from "react-icons/gr";
 import stylesHome from "../../styles/Home.module.css";
 
@@ -56,7 +54,7 @@ const repos = [
   {
     id: 1,
     title: "Vivo",
-    disc: "A site that combines social networking sites, an online store, and a lot of things that I wanted to learn",
+    disc: "Developed a social media website, where users can connect, shop and communicate seamlessly on a single platform.",
     link: "https://github.com/Nader-SH/Vivo",
   },
   {

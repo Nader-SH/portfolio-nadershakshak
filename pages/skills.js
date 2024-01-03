@@ -2,7 +2,7 @@ import styles from "../styles/Nader.module.css";
 import styleshome from "../styles/Home.module.css";
 import Head from "next/head";
 import Link from "next/link";
-import { FaGit, FaNode } from "react-icons/fa";
+import { FaGit, FaNode, FaVuejs } from "react-icons/fa";
 import { DiReact } from "react-icons/di";
 import {
   SiAntdesign,
@@ -35,6 +35,21 @@ const List = () => {
           <h3>Nodejs</h3>
             <FaNode
               style={{
+                fontSize: "45px",
+                margin: "inherit"
+              }}
+            />
+        </div>
+          </Link>
+          <Link
+            href="https://vuejs.org/"
+            target="_blank"
+            // className={styles.iconCss}
+          >
+        <div className={styles.single}>
+          <h3>Vuejs</h3>
+            <FaVuejs
+              style={{
                 fontSize: "40px",
                 margin: "inherit"
               }}
@@ -51,6 +66,21 @@ const List = () => {
             <DiReact
               style={{
                 fontSize: "45px",
+                margin: "inherit"
+              }}
+            />
+        </div>
+          </Link>
+          <Link
+            href="https://nuxt.com/"
+            target="_blank"
+            // className={styles.iconCss}
+          >
+        <div className={styles.single}>
+          <h3>Nuxtjs</h3>
+            <FaVuejs
+              style={{
+                fontSize: "40px",
                 margin: "inherit"
               }}
             />

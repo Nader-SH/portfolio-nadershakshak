@@ -46,10 +46,22 @@ export default List;
 
 const repos = [
   {
+    id: 8,
+    title: "RTM_Dashboard",
+    disc: "",
+    link: "https://rtm-board.com",
+  },
+  {
+    id: 7,
+    title: "Scout_Management",
+    disc: "",
+    link: "#",
+  },
+  {
     id: 6,
     title: "Eqra",
     disc: "Freelance Project ",
-    link: "",
+    link: "#",
   },
   {
     id: 1,

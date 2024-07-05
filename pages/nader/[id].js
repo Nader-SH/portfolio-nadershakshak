@@ -6,11 +6,9 @@ import Link from "next/link";
 import stylesHome  from "../../styles/Home.module.css";
 const DetailsRepo = ({ id }) => {
   const [data, setData] = useState({});
-console.log(data);
   useEffect(() => {
     repos.filter((ele) => {
       if (ele.id === Number(id)) {
-        console.log(ele);
         setData(ele);
       }
     });
@@ -40,6 +38,18 @@ export async function getServerSideProps(context) {
 export default DetailsRepo;
 
 const repos = [
+  {
+    id: 8,
+    title: "RTM_Dashboard",
+    disc: "Spearheaded the develpment of a pivotal management appliction tailored for civil engineers and architects in Denmark . Designed and implemented an intuitive-interface empowering project officials , owners and associated companies to monitor and track project progress effectively . Streamlined communication and -collaboration among stakeholders, optimizing workflow managment and project supervision . ",
+    link: "https://rtm-board.com",
+  },
+  {
+    id: 7,
+    title: "Scout_Management",
+    disc: "Developed a comprehensive scouting project management platform facilitaing group registrations , formation of family teams, and nature trip plannig. Led the design and implementation of the main interface , ensuring seamless control and managment for project officials , leaders and participating families. Enhanced user experience for group officials ,enabling efficient oversight and coordination of project activities.",
+    link: "#",
+  },
   {
     id: 6,
     title: "Eqra",

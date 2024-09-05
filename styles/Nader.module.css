@@ -5,12 +5,21 @@
     border-left: 8px solid #fff;
     display: flex;
     justify-content: space-between;
+    font-size: 25px;
+  }
+  .single:hover{
+    border-left: 8px solid gray;
   }
   .iconCss{
     display: flex;
     align-items: center;
   }
+  .titleDiv{
+    display: contents;
+  }
 
-  .single:hover {
-    border-left: 8px solid #4979ff;
+  @media only screen and (max-width: 600px) {
+    .single {
+      font-size: 15px;
+    }
   }

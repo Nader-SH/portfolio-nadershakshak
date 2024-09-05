@@ -1,12 +1,10 @@
 import styles from "../../styles/Nader.module.css";
 import Head from "next/head";
-import { useEffect, useState } from "react";
 import Link from "next/link";
-import { AiFillGithub } from "react-icons/ai";
 import { GrRedo } from "react-icons/gr";
 import stylesHome from "../../styles/Home.module.css";
+import { CiLock } from "react-icons/ci";
 
-const token = process.env.NEXT_PUBLIC_GIT_HUB_TOKEN;
 
 const List = () => {
   return (
@@ -20,21 +18,30 @@ const List = () => {
       <div>
         {repos.map((ele) => (
           <div key={ele.id} className={styles.single}>
-            <h3>{ele.title}</h3>
             <Link
-              href={`/nader/${ele.id}`}
+              href={`/projects/${ele.id}`}
               target="_self"
               className={styles.iconCss}
             >
-              <h4>Details</h4>
+              <h3>{ele.title}</h3>
             </Link>
-            <Link href={ele.link} target="_blank" className={styles.iconCss}>
-              <GrRedo
-                style={{
-                  fontSize: "30px",
-                }}
-              />
-            </Link>
+            {!ele.link ? (
+              <div className={styles.iconCss}>
+                <CiLock
+                  style={{
+                    fontSize: "30px",
+                  }}
+                />
+              </div>
+            ) :
+              <Link href={ele.link} target="_blank" className={styles.iconCss}>
+                <GrRedo
+                  style={{
+                    fontSize: "30px",
+                  }}
+                />
+              </Link>
+            }
           </div>
         ))}
         <Link href="/docscode" className={stylesHome.btn}>
@@ -49,9 +56,27 @@ export default List;
 
 const repos = [
   {
+    id: 8,
+    title: "RTM_Dashboard",
+    disc: "",
+    link: "",
+  },
+  {
+    id: 7,
+    title: "Scout_Management",
+    disc: "",
+    link: "",
+  },
+  {
+    id: 6,
+    title: "Eqra",
+    disc: "Freelance Project ",
+    link: "",
+  },
+  {
     id: 1,
     title: "Vivo",
-    disc: "A site that combines social networking sites, an online store, and a lot of things that I wanted to learn",
+    disc: "Developed a social media website, where users can connect, shop and communicate seamlessly on a single platform.",
     link: "https://github.com/Nader-SH/Vivo",
   },
   {
@@ -78,4 +103,5 @@ const repos = [
     disc: "Website to buy and borrow books",
     link: "https://github.com/Nader-SH/Team3-bookStore",
   },
+
 ];

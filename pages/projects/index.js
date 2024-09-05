@@ -18,30 +18,30 @@ const List = () => {
       <div>
         {repos.map((ele) => (
           <div key={ele.id} className={styles.single}>
-                        <Link
+            <Link
               href={`/projects/${ele.id}`}
               target="_self"
               className={styles.iconCss}
             >
-            <h3>{ele.title}</h3>
+              <h3>{ele.title}</h3>
             </Link>
             {!ele.link ? (
               <div className={styles.iconCss}>
-              <CiLock
-              style={{
-                fontSize: "30px",
-              }}
-              />
+                <CiLock
+                  style={{
+                    fontSize: "30px",
+                  }}
+                />
               </div>
             ) :
-            <Link href={ele.link} target="_blank" className={styles.iconCss}>
-              <GrRedo
-                style={{
-                  fontSize: "30px",
-                }}
-              />
-            </Link>
-          }
+              <Link href={ele.link} target="_blank" className={styles.iconCss}>
+                <GrRedo
+                  style={{
+                    fontSize: "30px",
+                  }}
+                />
+              </Link>
+            }
           </div>
         ))}
         <Link href="/docscode" className={stylesHome.btn}>

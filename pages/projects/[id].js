@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import styles from "../../styles/Home.module.css";
 import Link from "next/link";
-import stylesHome  from "../../styles/Home.module.css";
+import stylesHome from "../../styles/Home.module.css";
 const DetailsRepo = ({ id }) => {
   const [data, setData] = useState({});
   useEffect(() => {
@@ -16,18 +16,17 @@ const DetailsRepo = ({ id }) => {
 
   return (
     <div>
-          <Head>
-            <title>Nader | {data.title}</title>
-          </Head>
-          <div>
-            <h1 className={styles.title}>{data.title}</h1>
-            <p className={styles.text}>{data.disc}</p>
-          </div>
-          <Link href="/projects" className={stylesHome.btn}>
-          Nader Projects
-        </Link>
+      <Head>
+        <title>Nader | {data.title}</title>
+      </Head>
+      <div>
+        <h1 className={styles.title}>{data.title}</h1>
+        <p className={styles.text}>{data.disc}</p>
+      </div>
+      <Link href="/projects" className={stylesHome.btn}>
+        Nader Projects
+      </Link>
     </div>
-    
   );
 };
 

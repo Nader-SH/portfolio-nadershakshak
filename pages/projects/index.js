@@ -3,6 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { GrRedo } from "react-icons/gr";
 import stylesHome from "../../styles/Home.module.css";
+import { CiLock } from "react-icons/ci";
 
 
 const List = () => {
@@ -18,13 +19,21 @@ const List = () => {
         {repos.map((ele) => (
           <div key={ele.id} className={styles.single}>
                         <Link
-              href={`/nader/${ele.id}`}
+              href={`/projects/${ele.id}`}
               target="_self"
               className={styles.iconCss}
             >
             <h3>{ele.title}</h3>
-
             </Link>
+            {!ele.link ? (
+              <div className={styles.iconCss}>
+              <CiLock
+              style={{
+                fontSize: "30px",
+              }}
+              />
+              </div>
+            ) :
             <Link href={ele.link} target="_blank" className={styles.iconCss}>
               <GrRedo
                 style={{
@@ -32,6 +41,7 @@ const List = () => {
                 }}
               />
             </Link>
+          }
           </div>
         ))}
         <Link href="/docscode" className={stylesHome.btn}>
@@ -49,19 +59,19 @@ const repos = [
     id: 8,
     title: "RTM_Dashboard",
     disc: "",
-    link: "https://rtm-board.com",
+    link: "",
   },
   {
     id: 7,
     title: "Scout_Management",
     disc: "",
-    link: "#",
+    link: "",
   },
   {
     id: 6,
     title: "Eqra",
     disc: "Freelance Project ",
-    link: "#",
+    link: "",
   },
   {
     id: 1,

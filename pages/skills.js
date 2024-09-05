@@ -252,7 +252,7 @@ const List = () => {
         </div>
           </Link>
       </div>
-      <Link href="/nader" className={styleshome.btn}>
+      <Link href="/projects" className={styleshome.btn}>
         Nader Projects
       </Link>
     </>

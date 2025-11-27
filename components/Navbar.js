@@ -41,7 +41,7 @@ const Navbar = () => {
                 padding: "10px",
                 borderRadius: "8px",
                 boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
-                border: "2px solid #4979ff",
+                border: "2px solid #333",
                 animation: "fadeIn 0.3s ease"
               }}>
                 <Image 

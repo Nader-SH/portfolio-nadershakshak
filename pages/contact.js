@@ -10,14 +10,14 @@ const Contact = () => {
       title: "Email",
       value: "nadershak149@gmail.com",
       href: "mailto:nadershak149@gmail.com",
-      color: "#4979ff"
+      color: "#333"
     },
     {
       icon: FaPhone,
       title: "Phone",
       value: "+972 593235128",
       href: "tel:+972593235128",
-      color: "#4979ff"
+      color: "#333"
     },
     {
       icon: FaWhatsapp,
@@ -45,7 +45,7 @@ const Contact = () => {
       title: "Portfolio",
       value: "portfolio-nadershakshak.vercel.app",
       href: "https://portfolio-nadershakshak.vercel.app",
-      color: "#4979ff"
+      color: "#333"
     }
   ];
 

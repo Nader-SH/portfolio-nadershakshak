@@ -13,7 +13,7 @@ const List = () => {
         <title>Nader | Nader List</title>
       </Head>
       <div>
-        <h1>Nader List Repositories </h1>
+        <h1 className={stylesHome.title}>Projects</h1>
       </div>
       <div>
         {repos.map((ele) => (
@@ -55,6 +55,12 @@ const List = () => {
 export default List;
 
 const repos = [
+  {
+    id: 10,
+    title: "Thresholdsa - ERP System & Web Applications",
+    disc: "Full Stack Development at Thresholdsa - Developed and maintained ERP System using Next.js and NestJS, and web applications using React.js. Built custom BMI calculation algorithm, scalable RESTful APIs, and integrated frontend with backend services.",
+    link: "",
+  },
   {
     id: 8,
     title: "RTM_Dashboard",

@@ -21,10 +21,21 @@ const DetailsRepo = ({ id }) => {
       </Head>
       <div>
         <h1 className={styles.title}>{data.title}</h1>
-        <p className={styles.text}>{data.disc}</p>
+        <div 
+          className={styles.text}
+          style={{
+            textAlign: "left",
+            maxWidth: "900px",
+            margin: "0 auto",
+            whiteSpace: "pre-line",
+            lineHeight: "1.8"
+          }}
+        >
+          {data.disc}
+        </div>
       </div>
       <Link href="/projects" className={stylesHome.btn}>
-        Nader Projects
+        My Projects
       </Link>
     </div>
   );
@@ -37,6 +48,26 @@ export async function getServerSideProps(context) {
 export default DetailsRepo;
 
 const repos = [
+  {
+    id: 10,
+    title: "Thresholdsa - ERP System & Web Applications",
+    disc: `Software Engineer | Mid-Level Front End Developer → Full Stack Developer
+Thresholdsa, Saudi Arabia (May 2025 - December 2025)
+
+• Developed and maintained ERP System full-stack web applications using Next.js and NestJS to build high-performance, scalable, and user-friendly solutions.
+
+• Engineered a custom BMI (Body Mass Index) calculation algorithm for athletes, factoring in age, height, and weight to provide tailored health metrics and data-driven insights.
+
+• Built and maintained robust backend services, developing scalable RESTful APIs with NestJS to handle server-side logic, database operations, and serve the calculation engine.
+
+• Integrated frontend interfaces (React.js) with backend APIs to ensure a seamless data flow and dynamic user experience.
+
+Software Engineer | Mid-Level Front End Developer
+ThresholdsSa, Saudi Arabia (December 2024 - May 2025)
+
+• Developed and maintained web applications using advanced technologies, including React.js, to build high-performance, scalable, and user-friendly solutions.`,
+    link: "",
+  },
   {
     id: 8,
     title: "RTM_Dashboard",

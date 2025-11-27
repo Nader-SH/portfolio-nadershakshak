@@ -8,6 +8,70 @@
   text-align: center;
   font-size: 20px;
 }
+.textContainer {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-left: 4px solid #333;
+}
+.sectionTitle {
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 24px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+}
+.sectionText {
+  color: #555;
+  text-align: left;
+  line-height: 1.8;
+  font-size: 16px;
+  margin: 0;
+}
+.jobTitle {
+  color: #555;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+}
+.jobInfo {
+  margin-bottom: 10px;
+  text-align: left;
+  color: #666;
+  font-size: 15px;
+}
+.projectInfo {
+  margin-bottom: 10px;
+  text-align: left;
+  line-height: 1.8;
+  color: #666;
+  font-size: 15px;
+}
+.responsibilitiesList {
+  text-align: left;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  line-height: 1.8;
+  color: #555;
+  font-size: 15px;
+}
+.responsibilitiesList li {
+  margin-bottom: 8px;
+}
 .btn {
   display: block;
   width: 150px;

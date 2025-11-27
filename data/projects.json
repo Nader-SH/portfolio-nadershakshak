@@ -1,0 +1,68 @@
+{
+  "projects": [
+    {
+      "id": 10,
+      "title": "Thresholdsa - ERP System & Web Applications",
+      "shortDescription": "Full Stack Development at Thresholdsa - Developed and maintained ERP System using Next.js and NestJS, and web applications using React.js. Built custom BMI calculation algorithm, scalable RESTful APIs, and integrated frontend with backend services.",
+      "fullDescription": "Software Engineer | Mid-Level Front End Developer → Full Stack Developer\nThresholdsa, Saudi Arabia (May 2025 - December 2025)\n\n• Developed and maintained ERP System full-stack web applications using Next.js and NestJS to build high-performance, scalable, and user-friendly solutions.\n\n• Engineered a custom BMI (Body Mass Index) calculation algorithm for athletes, factoring in age, height, and weight to provide tailored health metrics and data-driven insights.\n\n• Built and maintained robust backend services, developing scalable RESTful APIs with NestJS to handle server-side logic, database operations, and serve the calculation engine.\n\n• Integrated frontend interfaces (React.js) with backend APIs to ensure a seamless data flow and dynamic user experience.\n\nSoftware Engineer | Mid-Level Front End Developer\nThresholdsSa, Saudi Arabia (December 2024 - May 2025)\n\n• Developed and maintained web applications using advanced technologies, including React.js, to build high-performance, scalable, and user-friendly solutions.",
+      "link": ""
+    },
+    {
+      "id": 8,
+      "title": "RTM_Dashboard",
+      "shortDescription": "Management application for civil engineers and architects in Denmark",
+      "fullDescription": "Spearheaded the development of a pivotal management application tailored for civil engineers and architects in Denmark. Designed and implemented an intuitive interface empowering project officials, owners and associated companies to monitor and track project progress effectively. Streamlined communication and collaboration among stakeholders, optimizing workflow management and project supervision.",
+      "link": ""
+    },
+    {
+      "id": 7,
+      "title": "Scout_Management",
+      "shortDescription": "Comprehensive scouting project management platform",
+      "fullDescription": "Developed a comprehensive scouting project management platform facilitating group registrations, formation of family teams, and nature trip planning. Led the design and implementation of the main interface, ensuring seamless control and management for project officials, leaders and participating families. Enhanced user experience for group officials, enabling efficient oversight and coordination of project activities.",
+      "link": ""
+    },
+    {
+      "id": 6,
+      "title": "Eqra",
+      "shortDescription": "User-friendly platform for a school's library system and reader competitions",
+      "fullDescription": "Collaborated with a team of developers to design and develop a user-friendly frontend for a school library management system. Developed the frontend using HTML, CSS, and JavaScript, ensuring that the design was responsive and optimized for all screen sizes. Created dashboards for school administrators that display competition and student statistics, which greatly simplifies the administration process for teachers and supervisors.",
+      "link": ""
+    },
+    {
+      "id": 1,
+      "title": "Vivo",
+      "shortDescription": "Social media website where users can connect, shop and communicate seamlessly",
+      "fullDescription": "Developed a social media website, where users can connect, shop and communicate seamlessly on a single platform. Utilized a wide range of technologies including Node.js, Express.js, React, PostgreSQL, and Socket.IO to build a robust and scalable Vivo. Developed a chat system utilizing Socket.IO for real-time communication. Developed an easy-to-use buying and selling system in my social media website to elevate the overall user experience and increase sales for business owners.",
+      "link": "https://github.com/Nader-SH/Vivo"
+    },
+    {
+      "id": 2,
+      "title": "PMS",
+      "shortDescription": "Complete pharmacy management system for the Gaza Strip",
+      "fullDescription": "A complete system platform for managing pharmacies in the Gaza Strip, controlling resources, and identifying shortages and needs in the local market. Utilized a wide range of technologies including Node.js, Express.js, React, PostgreSQL, and unit testing to build a robust and scalable PMS. Conducted thorough unit testing and implemented robust error handling mechanisms, guaranteeing the reliability and stability of the PMS.",
+      "link": "https://github.com/Nader-SH/PMS"
+    },
+    {
+      "id": 3,
+      "title": "Shop_t7",
+      "shortDescription": "A simple eCommerce app using ReactJs",
+      "fullDescription": "A simple eCommerce app using ReactJs. Built with modern React patterns and best practices for state management and component architecture.",
+      "link": "https://github.com/Nader-SH/Shop_t7"
+    },
+    {
+      "id": 4,
+      "title": "Portfolio",
+      "shortDescription": "Personal portfolio website",
+      "fullDescription": "This website - A modern portfolio website built with Next.js showcasing my skills, projects, and experience as a Full Stack Developer.",
+      "link": "https://github.com/Nader-SH/portfolio-nadershakshak"
+    },
+    {
+      "id": 5,
+      "title": "Team3-bookStore",
+      "shortDescription": "Website to buy and borrow books",
+      "fullDescription": "Website to buy and borrow books. A collaborative project that provides an online platform for book enthusiasts to purchase and borrow books with an intuitive user interface.",
+      "link": "https://github.com/Nader-SH/Team3-bookStore"
+    }
+  ]
+}
+

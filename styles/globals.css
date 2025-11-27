@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: #f2f2f2;
   color: #333;
   font-family: "Nunito";
+  display: flex;
+  flex-direction: column;
 }
 a {
   color: #333;
@@ -12,6 +20,7 @@ a {
 .content {
   max-width: 1000px;
   margin: 0 auto;
+  min-height: calc(100vh - 200px);
 }
 nav {
   margin: 10px auto 80px;
@@ -32,13 +41,36 @@ flex-wrap: wrap;
 }
 nav a {
   margin-left: 20px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+nav a:hover {
+  background-color: #f0f0f0;
+}
+nav a.active {
+  color: #333;
+  font-weight: 600;
+  background-color: #f0f0f0;
+  border-bottom: 2px solid #333;
 }
 nav .logo {
   margin-right: auto;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 @media screen and (max-width: 768px) {
   nav .logo {
     margin: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+  nav .logo h2 {
+    font-size: 20px;
+  }
+  nav .logo p {
+    font-size: 12px;
   }
   .tabsList{
     justify-content: center;
@@ -56,18 +88,78 @@ footer {
   display: block;
   text-align: center;
   padding: 30px 0;
-  margin-top: 60px;
+  margin-top: auto;
   color: #777;
   border-top: 1px solid #eaeaea;
+  width: 100%;
+}
+footer h1 {
+  margin: 0 0 20px 0;
+  font-size: 24px;
+  color: #333;
 }
 .socialMedia{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 0 20px;
+}
+.socialMedia a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+.socialMedia a:hover {
+  background-color: #f0f0f0;
+}
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 20px 0;
+  }
+  footer h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .socialMedia {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .socialMedia a {
+    width: 100%;
+    max-width: 200px;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  footer h1 {
+    font-size: 18px;
+  }
+  .socialMedia a {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
 }
 .not-found {
   text-align: center;
 }
 .not-found a{
-  color: #4979ff;
+  color: #333;
   text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
 }

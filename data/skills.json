@@ -1,0 +1,177 @@
+{
+  "programmingLanguages": [
+    {
+      "name": "HTML5",
+      "icon": "SiHtml5",
+      "href": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+      "iconSize": "40px"
+    },
+    {
+      "name": "CSS3",
+      "icon": "SiCss3",
+      "href": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+      "iconSize": "40px"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "SiJavascript",
+      "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      "iconSize": "40px"
+    },
+    {
+      "name": "TypeScript",
+      "icon": "SiTypescript",
+      "href": "https://www.typescriptlang.org/",
+      "iconSize": "35px"
+    },
+    {
+      "name": "Python",
+      "icon": "FaPython",
+      "href": "https://www.python.org/",
+      "iconSize": "40px"
+    }
+  ],
+  "frontendFrameworks": [
+    {
+      "name": "React.js",
+      "icon": "DiReact",
+      "href": "https://react.dev/",
+      "iconSize": "45px"
+    },
+    {
+      "name": "Next.js",
+      "icon": "SiNextdotjs",
+      "href": "https://nextjs.org/",
+      "iconSize": "40px"
+    },
+    {
+      "name": "Vue.js",
+      "icon": "FaVuejs",
+      "href": "https://vuejs.org/",
+      "iconSize": "40px"
+    },
+    {
+      "name": "Nuxt.js",
+      "icon": "SiNuxtdotjs",
+      "href": "https://nuxt.com/",
+      "iconSize": "40px"
+    }
+  ],
+  "frontendStyling": [
+    {
+      "name": "Tailwind CSS",
+      "icon": "SiTailwindcss",
+      "href": "https://tailwindcss.com/",
+      "iconSize": "40px"
+    },
+    {
+      "name": "Styled Components",
+      "icon": "DiReact",
+      "href": "https://styled-components.com/",
+      "iconSize": "40px"
+    },
+    {
+      "name": "Ant Design",
+      "icon": "SiAntdesign",
+      "href": "https://ant.design/",
+      "iconSize": "40px"
+    },
+    {
+      "name": "Material UI",
+      "icon": "SiMui",
+      "href": "https://mui.com/",
+      "iconSize": "40px"
+    }
+  ],
+  "backendFrameworks": [
+    {
+      "name": "Node.js",
+      "icon": "FaNode",
+      "href": "https://nodejs.org/en",
+      "iconSize": "45px"
+    },
+    {
+      "name": "Express.js",
+      "icon": "SiExpress",
+      "href": "https://expressjs.com/",
+      "iconSize": "35px"
+    },
+    {
+      "name": "NestJS",
+      "icon": "SiNestjs",
+      "href": "https://nestjs.com/",
+      "iconSize": "40px"
+    },
+    {
+      "name": "FastAPI",
+      "icon": "SiFastapi",
+      "href": "https://fastapi.tiangolo.com/",
+      "iconSize": "40px"
+    }
+  ],
+  "database": [
+    {
+      "name": "PostgreSQL",
+      "icon": "SiPostgresql",
+      "href": "https://www.postgresql.org/",
+      "iconSize": "40px"
+    },
+    {
+      "name": "MySQL",
+      "icon": "SiMysql",
+      "href": "https://www.mysql.com/",
+      "iconSize": "45px"
+    },
+    {
+      "name": "Sequelize",
+      "icon": "SiSequelize",
+      "href": "https://sequelize.org/",
+      "iconSize": "40px"
+    },
+    {
+      "name": "SQLAlchemy",
+      "icon": "FaDatabase",
+      "href": "https://www.sqlalchemy.org/",
+      "iconSize": "40px"
+    },
+    {
+      "name": "TypeORM",
+      "icon": "FaDatabase",
+      "href": "https://typeorm.io/",
+      "iconSize": "40px"
+    }
+  ],
+  "tools": [
+    {
+      "name": "Git",
+      "icon": "FaGit",
+      "href": "https://git-scm.com/",
+      "iconSize": "35px"
+    },
+    {
+      "name": "GitHub",
+      "icon": "AiFillGithub",
+      "href": "https://github.com/",
+      "iconSize": "40px"
+    },
+    {
+      "name": "Postman",
+      "icon": "SiPostman",
+      "href": "https://www.postman.com/",
+      "iconSize": "40px"
+    },
+    {
+      "name": "Swagger",
+      "icon": "SiSwagger",
+      "href": "https://swagger.io/",
+      "iconSize": "40px"
+    },
+    {
+      "name": "Unit Testing",
+      "icon": "BiTestTube",
+      "href": null,
+      "iconSize": "40px"
+    }
+  ]
+}
+

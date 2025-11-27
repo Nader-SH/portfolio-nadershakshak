@@ -9,43 +9,94 @@ const About = () => {
         <title>Nader | About</title>
       </Head>
       <div>
-        <h1 className={styles.title}>About Nader Shakshak</h1>
-        <p className={styles.text}>
-          As a full stack developer with experience in building web applications
-          using technologies such as Node.js, React, and Express, I am skilled
-          in using npm packages and have expertise working with databases such
-          as Postgres and MySQL. My proficiency in Sequelize and ability to
-          write effective queries allows me to manage and manipulate data
-          effectively. In addition, I am familiar with Java and have a strong
-          aptitude for learning new technologies. My professional experience
-          includes working as a Software Engineer and Development Team in Gaza
-          Goes Global and Team Leader as a freelancer.
-          <br/>
-          <br/>
-           In my role as a
-          Development Team Leader, I led the front-end development team and
-          oversaw the successful delivery of various projects. I also gained
-          valuable experience as a trainee on the front-end team at Gaza Goes
-          Global. I have completed an intensive learning program at
-          GazaSkyGeeks, where I gained hands-on experience in programming
-          technologies such as HTML, CSS, JS, Tailwind css, Node js, Express,
-          React, Material UI, Ant Design, GitHub, Git, and Typescript.
-          Additionally, I possess essential technical skills such as database
-          design and implementation, data migration, and version control using
-          Git.
-          <br/>
-          <br/>
-          As a developer, I am skilled in testing and debugging, possess
-          strong problem-solving skills, and have the ability to collaborate
-          effectively in a team and communicate technical concepts to both
-          technical and non-technical stakeholders. I also have excellent time
-          management skills and the ability to prioritize tasks in a fast-paced
-          development environment. Overall, I am a dedicated and skilled
-          developer with a passion for learning and utilizing new technologies.
-        </p>
+        <h1 className={styles.title}>About Nader Emad Shakshak</h1>
+        <div className={styles.text}>
+          <h2 style={{ color: "#333", marginTop: "30px", marginBottom: "15px" }}>Summary</h2>
+          <p style={{ textAlign: "left", maxWidth: "900px", margin: "0 auto 20px" }}>
+            Full Stack Developer with solid experience across modern front-end frameworks (React, Next.js, Vue.js, Nuxt.js) and 
+            backend technologies (Node.js, Express, NestJS, FastAPI). Skilled in building scalable, high-performance web applications 
+            with clean architectures, intuitive user interfaces, and efficient API integrations. Focused on problem-solving, performance 
+            optimization, and delivering user-centered solutions through collaborative teamwork.
+          </p>
+
+          <h2 style={{ color: "#333", marginTop: "30px", marginBottom: "15px" }}>Experience</h2>
+          
+          <h3 style={{ color: "#555", marginTop: "20px", marginBottom: "10px" }}>Software Engineer | Mid-Level Front End Developer → Full Stack Developer</h3>
+          <p style={{ marginBottom: "10px" }}><strong>Thresholdsa, Saudi Arabia</strong> (May 2025 - December 2025)</p>
+          <ul style={{ textAlign: "left", maxWidth: "800px", margin: "0 auto" }}>
+            <li>Developed and maintained ERP System full-stack web applications using Next.js and NestJS to build high-performance, scalable, and user-friendly solutions.</li>
+            <li>Engineered a custom BMI (Body Mass Index) calculation algorithm for athletes, factoring in age, height, and weight to provide tailored health metrics and data-driven insights.</li>
+            <li>Built and maintained robust backend services, developing scalable RESTful APIs with NestJS to handle server-side logic, database operations, and serve the calculation engine.</li>
+            <li>Integrated frontend interfaces (React.js) with backend APIs to ensure a seamless data flow and dynamic user experience.</li>
+          </ul>
+
+          <h3 style={{ color: "#555", marginTop: "20px", marginBottom: "10px" }}>Software Engineer | Mid-Level Front End Developer</h3>
+          <p style={{ marginBottom: "10px" }}><strong>ThresholdsSa, Saudi Arabia</strong> (December 2024 - May 2025)</p>
+          <ul style={{ textAlign: "left", maxWidth: "800px", margin: "0 auto" }}>
+            <li>Developed and maintained web applications using advanced technologies, including React.js, to build high-performance, scalable, and user-friendly solutions.</li>
+          </ul>
+
+          <h3 style={{ color: "#555", marginTop: "20px", marginBottom: "10px" }}>Software Engineer | Front End Developer</h3>
+          <p style={{ marginBottom: "10px" }}><strong>We Solve It ApS, Denmark</strong> (August 2023 - January 2024)</p>
+          <ul style={{ textAlign: "left", maxWidth: "800px", margin: "0 auto" }}>
+            <li>Led multiple projects utilizing cutting-edge frameworks such as Vue.js and Nuxt.js to develop robust and dynamic web applications.</li>
+            <li>Demonstrated expertise in leveraging Vue.js and Nuxt.js to create intuitive user interfaces and improve overall user experience.</li>
+            <li>Successfully collaborated with cross-functional teams to deliver high-quality software solutions within specified deadlines.</li>
+          </ul>
+
+          <h3 style={{ color: "#555", marginTop: "20px", marginBottom: "10px" }}>Software Engineer | Front End Developer</h3>
+          <p style={{ marginBottom: "10px" }}><strong>Freelancer, Saudi Arabia</strong> (March 2023 - April 2023)</p>
+          <p style={{ marginBottom: "10px", textAlign: "left", maxWidth: "800px", margin: "0 auto 10px" }}><strong>Eqra:</strong> A user-friendly platform for a school&apos;s library system and reader competitions, providing easy-to-use interfaces for children. The platform facilitated efficient library management and promoted a love for reading through engaging competitions.</p>
+          <ul style={{ textAlign: "left", maxWidth: "800px", margin: "0 auto" }}>
+            <li>Created dashboards for school administrators that display competition and student statistics, which greatly simplifies the administration process for teachers and supervisors.</li>
+          </ul>
+
+          <h3 style={{ color: "#555", marginTop: "20px", marginBottom: "10px" }}>Personal Project | Full Stack Developer</h3>
+          <p style={{ marginBottom: "10px" }}><strong>Gaza Sky Geeks, Gaza</strong> (January 2023 - March 2023)</p>
+          <p style={{ marginBottom: "10px", textAlign: "left", maxWidth: "800px", margin: "0 auto 10px" }}><strong>Vivo (Github):</strong> Developed a social media website, where users can connect, shop and communicate seamlessly on a single platform.</p>
+          <ul style={{ textAlign: "left", maxWidth: "800px", margin: "0 auto" }}>
+            <li>Utilized a wide range of technologies including Node.js, Express.js, React, PostgreSQL, and Socket.IO to build a robust and scalable Vivo.</li>
+            <li>Developed a chat system utilizing Socket.IO for real-time communication.</li>
+            <li>Developed an easy-to-use buying and selling system in my social media website to elevate the overall user experience and increase sales for business owners.</li>
+          </ul>
+
+          <h3 style={{ color: "#555", marginTop: "20px", marginBottom: "10px" }}>Code Academy Final Project | Full Stack Developer</h3>
+          <p style={{ marginBottom: "10px" }}><strong>Gaza Sky Geeks, Gaza</strong> (November 2022 - December 2022)</p>
+          <p style={{ marginBottom: "10px", textAlign: "left", maxWidth: "800px", margin: "0 auto 10px" }}><strong>PMS (Github):</strong> A complete system platform for managing pharmacies in the Gaza Strip, controlling resources, and identifying shortages and needs in the local market.</p>
+          <ul style={{ textAlign: "left", maxWidth: "800px", margin: "0 auto" }}>
+            <li>Utilized a wide range of technologies including Node.js, Express.js, React, PostgreSQL, and unit testing to build a robust and scalable PMS.</li>
+            <li>Conducted thorough unit testing and implemented robust error handling mechanisms, guaranteeing the reliability and stability of the PMS.</li>
+          </ul>
+
+          <h2 style={{ color: "#333", marginTop: "30px", marginBottom: "15px" }}>Education</h2>
+          
+          <h3 style={{ color: "#555", marginTop: "20px", marginBottom: "10px" }}>Code Academy Bootcamp: Full Stack Web Developer</h3>
+          <p style={{ marginBottom: "10px" }}><strong>Code Academy Bootcamp | Gaza Sky Geeks, Gaza, Palestine</strong> (August 2022 - January 2023)</p>
+          <ul style={{ textAlign: "left", maxWidth: "800px", margin: "0 auto" }}>
+            <li>Selected among over 1000 applicants, alongside 36 individuals, for an intensive 16-week course, demonstrating exceptional skills and potential in a competitive selection process.</li>
+            <li>Acquired comprehensive knowledge and practical experience in various technologies, such as Node.js, Express.js, React, PostgreSQL, and Sequelize.</li>
+            <li>Completed multiple projects throughout the bootcamp, applying newly acquired skills in real-world scenarios.</li>
+          </ul>
+
+          <h3 style={{ color: "#555", marginTop: "20px", marginBottom: "10px" }}>Code Academy foundation course: Frontend Web Developer</h3>
+          <p style={{ marginBottom: "10px" }}><strong>Gaza Sky Geeks, Gaza, Palestine</strong> (January 2022 - April 2022)</p>
+          <ul style={{ textAlign: "left", maxWidth: "800px", margin: "0 auto" }}>
+            <li>Selected among over 500 applicants, alongside 40 individuals, for an intensive 12-week course, demonstrating exceptional skills and potential in a competitive selection process.</li>
+            <li>Acquired comprehensive knowledge and practical experience in various technologies, such as HTML5, CSS3, JS, DOM and BOM.</li>
+          </ul>
+
+          <h3 style={{ color: "#555", marginTop: "20px", marginBottom: "10px" }}>Bachelor&apos;s</h3>
+          <p style={{ marginBottom: "10px" }}><strong>Information Technology | University of Palestine, Gaza, Palestine</strong> (November 2021 - July 2025)</p>
+
+          <h3 style={{ color: "#555", marginTop: "20px", marginBottom: "10px" }}>Diploma</h3>
+          <p style={{ marginBottom: "10px" }}><strong>Multimedia | University of Palestine, Gaza, Palestine</strong> (February 2019 - October 2021)</p>
+        </div>
       </div>
       <Link href="/skills" className={styles.btn}>
-        Nader Skills
+        My Skills
+      </Link>
+      <Link href="/contact" className={styles.btn}>
+        Contact Me
       </Link>
     </>
   );

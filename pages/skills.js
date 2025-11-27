@@ -2,7 +2,8 @@ import styles from "../styles/Nader.module.css";
 import styleshome from "../styles/Home.module.css";
 import Head from "next/head";
 import Link from "next/link";
-import { FaGit, FaNode, FaVuejs } from "react-icons/fa";
+import skillsData from "../data/skills.json";
+import { FaGit, FaNode, FaVuejs, FaPython, FaDatabase } from "react-icons/fa";
 import { DiReact } from "react-icons/di";
 import {
   SiAntdesign,
@@ -14,246 +15,127 @@ import {
   SiPostman,
   SiSequelize,
   SiTypescript,
+  SiNestjs,
+  SiFastapi,
+  SiTailwindcss,
+  SiSwagger,
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiNuxtdotjs,
 } from "react-icons/si";
 import { AiFillGithub } from "react-icons/ai";
+import { BiTestTube } from "react-icons/bi";
+
+// Icon mapping
+const iconMap = {
+  FaGit,
+  FaNode,
+  FaVuejs,
+  FaPython,
+  FaDatabase,
+  DiReact,
+  SiAntdesign,
+  SiExpress,
+  SiMui,
+  SiMysql,
+  SiNextdotjs,
+  SiPostgresql,
+  SiPostman,
+  SiSequelize,
+  SiTypescript,
+  SiNestjs,
+  SiFastapi,
+  SiTailwindcss,
+  SiSwagger,
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiNuxtdotjs,
+  AiFillGithub,
+  BiTestTube,
+};
+
+const SkillItem = ({ name, icon, href, iconSize = "40px" }) => {
+  const IconComponent = iconMap[icon];
+  
+  const content = (
+    <div className={styles.single}>
+      <h3>{name}</h3>
+      {IconComponent && (
+        <IconComponent
+          style={{
+            fontSize: iconSize,
+            margin: "inherit"
+          }}
+        />
+      )}
+    </div>
+  );
+
+  if (href) {
+    return (
+      <Link href={href} target="_blank">
+        {content}
+      </Link>
+    );
+  }
+  return content;
+};
+
+const SkillSection = ({ title, skills }) => (
+  <div style={{ marginBottom: "40px" }}>
+    <h2 style={{ color: "#333", marginBottom: "20px", fontSize: "28px", textAlign: "center" }}>
+      {title}
+    </h2>
+    <div>
+      {skills.map((skill, index) => (
+        <SkillItem
+          key={index}
+          name={skill.name}
+          icon={skill.icon}
+          href={skill.href}
+          iconSize={skill.iconSize}
+        />
+      ))}
+    </div>
+  </div>
+);
+
 const List = () => {
+  const sections = [
+    { title: "Programming Languages", skills: skillsData.programmingLanguages },
+    { title: "Frontend Frameworks & Libraries", skills: skillsData.frontendFrameworks },
+    { title: "Frontend Styling", skills: skillsData.frontendStyling },
+    { title: "Backend Frameworks", skills: skillsData.backendFrameworks },
+    { title: "Database & ORM", skills: skillsData.database },
+    { title: "Tools & Testing", skills: skillsData.tools },
+  ];
+
   return (
     <>
       <Head>
-        <title>Nader | Nader Skills</title>
+        <title>Nader | My Skills</title>
       </Head>
       <div>
-        <h1>Nader Skills </h1>
+        <h1 className={styleshome.title}>My Skills</h1>
       </div>
-      <div>
-          <Link
-            href="https://nodejs.org/en"
-            target="_blank"
-            // className={styles.iconCss}
-          >
-        <div className={styles.single}>
-          <h3>Nodejs</h3>
-            <FaNode
-              style={{
-                fontSize: "45px",
-                margin: "inherit"
-              }}
-            />
-        </div>
-          </Link>
-          <Link
-            href="https://vuejs.org/"
-            target="_blank"
-            // className={styles.iconCss}
-          >
-        <div className={styles.single}>
-          <h3>Vuejs</h3>
-            <FaVuejs
-              style={{
-                fontSize: "40px",
-                margin: "inherit"
-              }}
-            />
-        </div>
-          </Link>
-          <Link
-            href="https://react.dev/"
-            target="_blank"
-            // className={styles.iconCss}
-          >
-        <div className={styles.single}>
-          <h3>Reactjs</h3>
-            <DiReact
-              style={{
-                fontSize: "45px",
-                margin: "inherit"
-              }}
-            />
-        </div>
-          </Link>
-          <Link
-            href="https://nuxt.com/"
-            target="_blank"
-            // className={styles.iconCss}
-          >
-        <div className={styles.single}>
-          <h3>Nuxtjs</h3>
-            <FaVuejs
-              style={{
-                fontSize: "40px",
-                margin: "inherit"
-              }}
-            />
-        </div>
-          </Link>
-          <Link
-            href="https://expressjs.com/"
-            target="_blank"
-            // className={styles.iconCss}
-          >
-        <div className={styles.single}>
-          <h3>Expressjs</h3>
-            <SiExpress
-              style={{
-                fontSize: "35px",
-                margin: "inherit"
-              }}
-            />
-        </div>
-          </Link>
-          <Link
-            href="https://nextjs.org/"
-            target="_blank"
-            // className={styles.iconCss}
-          >
-        <div className={styles.single}>
-          <h3>Nextjs</h3>
-            <SiNextdotjs
-              style={{
-                fontSize: "40px",
-                margin: "inherit"
-              }}
-            />
-        </div>
-          </Link>
-          <Link
-            href="https://www.typescriptlang.org/"
-            target="_blank"
-            // className={styles.iconCss}
-          >
-        <div className={styles.single}>
-          <h3>TypeScript</h3>
-            <SiTypescript
-              style={{
-                fontSize: "35px",
-                margin: "inherit"
-              }}
-            />
-        </div>
-          </Link>
-          <Link
-            href="https://www.postgresql.org/download/windows/"
-            target="_blank"
-            // className={styles.iconCss}
-          >
-        <div className={styles.single}>
-          <h3>Postgresql</h3>
-            <SiPostgresql
-              style={{
-                fontSize: "40px",
-                margin: "inherit"
-              }}
-            />
-        </div>
-          </Link>
-          <Link
-            href="https://git-scm.com/"
-            target="_blank"
-            // className={styles.iconCss}
-          >
-        <div className={styles.single}>
-          <h3>Git</h3>
-            <FaGit
-              style={{
-                fontSize: "35px",
-                margin: "inherit"
-              }}
-            />
-        </div>
-          </Link>
-          <Link
-            href="https://github.com/"
-            target="_blank"
-            // className={styles.iconCss}
-          >
-        <div className={styles.single}>
-          <h3>Github</h3>
-            <AiFillGithub
-              style={{
-                fontSize: "40px",
-                margin: "inherit"
-              }}
-            />
-        </div>
-          </Link>
-          <Link
-            href="https://sequelize.org/"
-            target="_blank"
-            // className={styles.iconCss}
-          >
-        <div className={styles.single}>
-          <h3>Sequelize</h3>
-            <SiSequelize
-              style={{
-                fontSize: "40px",
-                margin: "inherit"
-              }}
-            />
-        </div>
-          </Link>
-          <Link
-            href="https://www.mysql.com/"
-            target="_blank"
-            // className={styles.iconCss}
-          >
-        <div className={styles.single}>
-          <h3>MySQL</h3>
-            <SiMysql
-              style={{
-                fontSize: "45px",
-                margin: "inherit"
-              }}
-            />
-        </div>
-          </Link>
-          <Link
-            href="https://ant.design/"
-            target="_blank"
-            // className={styles.iconCss}
-          >
-        <div className={styles.single}>
-          <h3>Ant Design</h3>
-            <SiAntdesign
-              style={{
-                fontSize: "40px",
-                margin: "inherit"
-              }}
-            />
-        </div>
-          </Link>
-          <Link
-            href="https://mui.com/"
-            target="_blank"
-            // className={styles.iconCss}
-          >
-        <div className={styles.single}>
-          <h3>Material UI</h3>
-            <SiMui
-              style={{
-                fontSize: "40px",
-                margin: "inherit"
-              }}
-            />
-        </div>
-          </Link>
-          <Link
-            href="https://www.postman.com/"
-            target="_blank"
-            // className={styles.iconCss}
-          >
-        <div className={styles.single}>
-          <h3>Postman</h3>
-            <SiPostman
-              style={{
-                fontSize: "40px",
-                margin: "inherit"
-              }}
-            />
-        </div>
-          </Link>
+
+      <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
+        {sections.map((section, index) => (
+          <SkillSection
+            key={index}
+            title={section.title}
+            skills={section.skills}
+          />
+        ))}
       </div>
+
       <Link href="/projects" className={styleshome.btn}>
-        Nader Projects
+        My Projects
+      </Link>
+      <Link href="/contact" className={styleshome.btn}>
+        Contact Me
       </Link>
     </>
   );

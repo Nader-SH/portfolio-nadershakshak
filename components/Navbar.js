@@ -28,7 +28,6 @@ const Navbar = () => {
               alt="nader shakshak" 
               height={115} 
               width={115}
-              style={{ cursor: "pointer" }}
             />
             {showPreview && (
               <div style={{

@@ -2,13 +2,17 @@
     padding: 2px 16px;
     background: #fff;
     margin: 20px 10px;
-    border-left: 8px solid #fff;
+    border-left: 4px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     display: flex;
     justify-content: space-between;
     font-size: 25px;
+    transition: all 0.3s ease;
   }
   .single:hover{
-    border-left: 8px solid gray;
+    border-left: 4px solid #333;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
   }
   .iconCss{
     display: flex;

@@ -13,7 +13,7 @@ const List = () => {
         <title>Nader | Nader List</title>
       </Head>
       <div>
-        <h1>Nader List Repositories </h1>
+        <h1 className={stylesHome.title}>Projects</h1>
       </div>
       <div>
         {repos.map((ele) => (
